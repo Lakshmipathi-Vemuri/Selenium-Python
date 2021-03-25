@@ -11,7 +11,7 @@ def Lakshmi():
 
     lp.maximize_window()
 
-    lp.find_element_by_id("textbox").send_keys("Hi Lakshmi Abid-seema")
+    lp.find_element_by_id("textbox").send_keys("Hi LakshmiPathi")
 
     time.sleep(3)
 
