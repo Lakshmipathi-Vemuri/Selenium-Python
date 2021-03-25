@@ -1,0 +1,29 @@
+from selenium import webdriver
+import time
+lp = webdriver.Chrome(executable_path="C:\\Users\\vemurilakshmipathi.v\\Downloads\\chromedriver_win32\\chromedriver.exe")
+
+def Lakshmi():
+    global lp
+
+    #lp = webdriver.Chrome(executable_path="C:\\Users\\vemurilakshmipathi.v\\Downloads\\chromedriver_win32\\chromedriver.exe")
+
+    lp.get("http://demo.automationtesting.in/FileDownload.html")
+
+    lp.maximize_window()
+
+    lp.find_element_by_id("textbox").send_keys("Hi Lakshmi Abid-seema")
+
+    time.sleep(3)
+
+    lp.find_element_by_xpath("//*[@id='createTxt']").click()
+
+    time.sleep(3)
+
+    lp.find_element_by_xpath("//*[@id='link-to-download']").click()
+
+    time.sleep(7)
+
+    lp.close()
+if __name__ == '__main__':
+
+    Lakshmi()
